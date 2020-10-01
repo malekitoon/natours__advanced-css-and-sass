@@ -1,0 +1,14 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "scss tutorial",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "malekitoon",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
