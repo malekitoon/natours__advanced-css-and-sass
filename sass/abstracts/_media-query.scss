@@ -28,6 +28,8 @@ REM у media-query не у всіх браузерах коректно прац
 У media-query 37.5em будуть рівні 600px при дефолтному шрифті браузера 16px. Якщо юзер поставить в браузері напр. 20px, то ширина в медіа-квері стане не 600px, а 750px, а оскільки і всі розміри перерахуються бо 1rem стане 12.5px, то ці юзерські зміни шрифта в браузері будуть пропорційно відображені на сайті.
 */
 
+// ORDER: Base + Typography > general layout + grid > page layout > components
+
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
     @media (max-width: 37.5em) { @content }; // 600px
